@@ -1,0 +1,27 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg bg-dark-subtle">
+  <div class="container-fluid">
+    <!-- <a href="#" class="navbar-brand">NavBar</a> -->
+    <!-- <a href=""><img src="{% static 'images/web_dev.png' %}" alt="" /></a> -->
+    <button
+      type="button"
+      class="navbar-toggler"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarCollapse"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav">
+        <a href="{% url 'home' %}" class="nav-item nav-link active">Dashboard</a>
+        <a href="{% url 'products' %}" class="nav-item nav-link">Products</a>
+      </div>
+
+      <!-- <div class="navbar-nav ms-auto">
+                <a href="./register.html" class="nav-item nav-link">Register</a>
+                <a href="#" class="nav-item nav-link">Login</a>
+            </div> -->
+    </div>
+  </div>
+</nav>
